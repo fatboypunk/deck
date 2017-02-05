@@ -5,6 +5,17 @@ defmodule Cards do
 
   @doc """
     Returns a list of strings representing a deck of playing cards
+
+  ## Examples
+
+      iex> deck = Cards.create_deck
+      ["Ace of Spaces", "Two of Spaces", "Three of Spaces",
+       "Four of Spaces", "Five of Spaces", "Ace of Clubs",
+       "Two of Clubs", "Three of Clubs", "Four of Clubs",
+       "Five of Clubs", "Ace of Hearts", "Two of Hearts",
+       "Three of Hearts", "Four of Hearts", "Five of Hearts",
+       "Ace of Diamands", "Two of Diamands", "Three of Diamands",
+       "Four of Diamands", "Five of Diamands"]
   """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
@@ -19,6 +30,15 @@ defmodule Cards do
     Enum.shuffle(deck)
   end
 
+  @doc """
+     Determines wheter a deck contains a given card
+
+  ## examples
+
+    iex> deck = Cards.create_deck
+    iex> Cards.contains?(deck, "Ace of Spaces")
+    true
+  """
   def contains?(deck, card) do
     Enum.member?(deck, card)
   end

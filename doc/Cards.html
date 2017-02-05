@@ -91,6 +91,9 @@
     <a href="#contains?/2">contains?(deck, card)</a>
   </div>
   
+    <div class="summary-synopsis"><p>Determines wheter a deck contains a given card</p>
+</div>
+  
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -169,7 +172,16 @@
     
   </div>
   <section class="docstring">
-    
+    <p>   Determines wheter a deck contains a given card</p>
+<h2 id="contains?/2-examples" class="section-heading">
+  <a href="#contains?/2-examples" class="hover-link"><i class="icon-link"></i></a>
+  examples
+</h2>
+
+<p>  iex&gt; deck = Cards.create_deck
+  iex&gt; Cards.contains?(deck, “Ace of Spaces”)
+  true</p>
+
   </section>
 </div>
 <div class="detail" id="create_deck/0">
@@ -185,6 +197,19 @@
   </div>
   <section class="docstring">
     <p>  Returns a list of strings representing a deck of playing cards</p>
+<h2 id="create_deck/0-examples" class="section-heading">
+  <a href="#create_deck/0-examples" class="hover-link"><i class="icon-link"></i></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; deck = Cards.create_deck
+[&quot;Ace of Spaces&quot;, &quot;Two of Spaces&quot;, &quot;Three of Spaces&quot;,
+ &quot;Four of Spaces&quot;, &quot;Five of Spaces&quot;, &quot;Ace of Clubs&quot;,
+ &quot;Two of Clubs&quot;, &quot;Three of Clubs&quot;, &quot;Four of Clubs&quot;,
+ &quot;Five of Clubs&quot;, &quot;Ace of Hearts&quot;, &quot;Two of Hearts&quot;,
+ &quot;Three of Hearts&quot;, &quot;Four of Hearts&quot;, &quot;Five of Hearts&quot;,
+ &quot;Ace of Diamands&quot;, &quot;Two of Diamands&quot;, &quot;Three of Diamands&quot;,
+ &quot;Four of Diamands&quot;, &quot;Five of Diamands&quot;]</code></pre>
 
   </section>
 </div>
